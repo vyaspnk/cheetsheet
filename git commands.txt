@@ -1,0 +1,18 @@
+git commands:
+
+
+git clone
+git fetch 
+git checkout vyas-16.4.4
+make changes/compile/test
+git commit
+git push origin vyas-16.4.4
+goto GitHub.com and generate pull request 	
+
+
+create new branch
+git branch
+git checkout 16.4.5
+git branch
+git checkout -b vyas-16.4.5
+git pull --rebase origin 16.4.5
