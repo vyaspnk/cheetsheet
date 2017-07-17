@@ -1,0 +1,9 @@
+X11 setting on mac
+On Mac:
+sudo xhost + remote.server.name
+
+That added the host to the allowed X11 list on the local host.
+
+Now ssh -X username@remote.server.name
+
+Test with some GUI like clock or Wireshark.
