@@ -1,7 +1,7 @@
 git commands:
 
 
-git clone
+git clone 
 git fetch 
 git checkout vyas-16.4.4
 make changes/compile/test
@@ -10,9 +10,37 @@ git push origin vyas-16.4.4
 goto GitHub.com and generate pull request 	
 
 
+rahul
+++++++
+git fetch origin
+git checkout -b 17.1.4 origin/17.1.4
+git pull --rebase origin 17.1.4
+git checkout -b vyas-17.1.4
+
 create new branch
 git branch
 git checkout 16.4.5
+git pull --rebase origin 16.4.5
 git branch
 git checkout -b vyas-16.4.5
 git pull --rebase origin 16.4.5
+  
+
+cherry pick changes from git log
+
+git cherry-pick <commit-hash-last+1>..<commit-hash-till-top_of_log>
+git cherry-pick fafa190b79e166602270325d403c20d5320f3245..77657219c33228d7931059f48238994333713a17
+
+edit last commit
+git reset --soft HEAD~1
+git commit --ORIG_HEAD
+
+git branch/tag cmds:
+list the tags  
+git tag -l
+
+checkout a specific tag:
+git checkout tags/<tag_name>
+
+checkout and create a branch (otherwise you will be on a branch named after the revision number of tag):
+git checkout tags/<tag_name> -b <branch_name>
