@@ -1,0 +1,8 @@
+There are bookmarks, you must know...
+Open a new TextEdit document, change to unformatted text mode via the Format menu, and enter a connection string with the same scheme shown in the Scripter's Way (but without the scripting code, of course): 
+
+protocol://username:password@server/share 
+
+Ex: smb://root:avi123@10.10.26.123/vyas-bar-1
+
+Now select this line and drag-and-drop it onto your Desktop. You should get a new file with a bookmark icon. If it's just a text clipping icon, the syntax of your connection string was incorrect. 
